@@ -64,7 +64,7 @@ class FilesClient(APIClient):
         """
         return self.delete(f'/api/v1/files/{file_id}')
 
-def get_file_client(user: AuthenticationUserDict) -> FilesClient:
+def get_files_client(user: AuthenticationUserDict) -> FilesClient:
     """
     Функция создаёт экземпляр FilesClient с уже настроенным HTTP-клиентом.
 

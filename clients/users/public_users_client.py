@@ -14,7 +14,7 @@ class User(TypedDict):
 class CreateUserResponseDict(TypedDict):
     user: User
 
-class CreateUserDict(TypedDict):
+class CreateUserRequestDict(TypedDict):
     """
     Описание структуры запроса для создания пользователя.
     """
@@ -29,7 +29,7 @@ class PublicUsersClient(APIClient):
     Клиент для работы с /api/v1/users
     """
 
-    def create_user_api(self, request: CreateUserDict) -> Response:
+    def create_user_api(self, request: CreateUserRequestDict) -> Response:
         """
         Метод создает нового пользователя
 
@@ -38,7 +38,7 @@ class PublicUsersClient(APIClient):
         """
         return self.post('api/v1/users', json=request)
 
-    def create_user(self, request: CreateUserDict) -> CreateUserResponseDict:
+    def create_user(self, request: CreateUserRequestDict) -> CreateUserResponseDict:
         """
         Метод создание пользователя с получением json на выходе
         :param request: Словарь с параметрами создаваемого пользователя
@@ -48,7 +48,7 @@ class PublicUsersClient(APIClient):
         return response.json()
 
 
-def get_public_user_client() -> PublicUsersClient:
+def get_public_users_client() -> PublicUsersClient:
     """
     Функция создаёт экземпляр AuthenticationClient с уже настроенным HTTP-клиентом.
 

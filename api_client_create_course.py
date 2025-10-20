@@ -1,11 +1,11 @@
 from clients.courses.courses_client import get_courses_client, CreateCourseRequestDict
-from clients.files.files_client import get_file_client, CreateFileRequestDict
+from clients.files.files_client import get_files_client, CreateFileRequestDict
 from clients.private_http_builder import AuthenticationUserDict
-from clients.users.public_users_client import get_public_user_client, CreateUserDict
+from clients.users.public_users_client import get_public_users_client, CreateUserRequestDict
 from tools.fakers import get_random_email
 
-public_users_client = get_public_user_client()
-create_user_request = CreateUserDict(
+public_users_client = get_public_users_client()
+create_user_request = CreateUserRequestDict(
     email=get_random_email(),
     password= "string",
     lastName= "string",
@@ -18,7 +18,7 @@ authentication_user_dict = AuthenticationUserDict(
     email=create_user_request['email'],
     password=create_user_request['password']
 )
-files_client = get_file_client(authentication_user_dict)
+files_client = get_files_client(authentication_user_dict)
 courses_client = get_courses_client(authentication_user_dict)
 
 create_file_request = CreateFileRequestDict(

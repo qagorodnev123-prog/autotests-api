@@ -1,10 +1,10 @@
 from clients.private_http_builder import AuthenticationUserDict
 from clients.users.private_users_client import get_private_user_client
-from clients.users.public_users_client import get_public_user_client, CreateUserDict
+from clients.users.public_users_client import get_public_users_client, CreateUserRequestDict
 from tools.fakers import get_random_email
 
-public_users_client = get_public_user_client()
-create_user_request = CreateUserDict(
+public_users_client = get_public_users_client()
+create_user_request = CreateUserRequestDict(
     email=get_random_email(),
     password= "string",
     lastName= "string",
