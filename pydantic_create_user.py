@@ -3,7 +3,11 @@ from pydantic.alias_generators import to_camel
 
 
 class UserSchema(BaseModel):
+    """
+    Модель пользователя
+    """
     model_config = ConfigDict(alias_generator=to_camel, populate_by_name=True)
+
     id: str
     email: EmailStr
     last_name: str
@@ -11,7 +15,11 @@ class UserSchema(BaseModel):
     middle_name: str
 
 class CreateUserRequestSchema(BaseModel):
+    """
+    Модель тела запроса для создания пользователя, эндпоинт - POST /api/v1/users .
+    """
     model_config = ConfigDict(alias_generator=to_camel, populate_by_name=True)
+
     email: EmailStr
     password: str
     last_name: str
@@ -19,4 +27,7 @@ class CreateUserRequestSchema(BaseModel):
     middle_name: str
 
 class CreateUserResponseSchema(BaseModel):
+    """
+    Модель ответа на запрос создания пользователя, эндпоинт - POST /api/v1/users .
+    """
     user: UserSchema
