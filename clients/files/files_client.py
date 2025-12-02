@@ -10,7 +10,7 @@ class FilesClient(APIClient):
     """
    Клиент для работы с /api/v1/files
    """
-    def get_file(self, file_id: str) -> Response:
+    def get_file_api(self, file_id: str) -> Response:
         """
         Метод получения файла.
 
