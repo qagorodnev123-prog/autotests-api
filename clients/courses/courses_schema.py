@@ -60,6 +60,10 @@ class CreateCourseRequestSchema(BaseModel):
     created_by_user_id: str = Field(default_factory=fake.uuid4)
 
 
+class GetCoursesResponseSchema(BaseModel):
+    courses: list[CourseSchema]
+
+
 class UpdateCourseRequestSchema(BaseModel):
     model_config = ConfigDict(populate_by_name=True, alias_generator=to_camel)
 
@@ -72,3 +76,10 @@ class UpdateCourseRequestSchema(BaseModel):
     min_score: int | None = Field(default_factory=fake.min_score)
     description: str | None = Field(default_factory=fake.text)
     estimated_time: str | None = Field(default_factory=fake.estimated_time)
+
+
+class UpdateCourseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа обновления курса.
+    """
+    course: CourseSchema
