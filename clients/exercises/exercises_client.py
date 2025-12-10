@@ -2,7 +2,7 @@ from clients.api_client import APIClient
 from httpx import Response
 
 from clients.exercises.exercises_schema import GetExercisesQuerySchema, GetExercisesResponseSchema, \
-    GetExerciseResponseSchema, CreateExerciseRequestSchema, UpdateExerciseRequestSchema
+    GetExerciseResponseSchema, CreateExerciseRequestSchema, UpdateExerciseRequestSchema, CreateExerciseResponseSchema
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
 
@@ -59,7 +59,7 @@ class ExercisesClient(APIClient):
         """
         return self.post('/api/v1/exercises', json=request.model_dump(by_alias=True))
 
-    def create_exercise(self, request: CreateExerciseRequestSchema) -> GetExerciseResponseSchema:
+    def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
         """
         Метод создания
 
@@ -68,7 +68,7 @@ class ExercisesClient(APIClient):
         :return: Ответ от сервера в виде json
         """
         response = self.create_exercise_api(request)
-        return GetExerciseResponseSchema.model_validate_json(response.text)
+        return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:
         """
