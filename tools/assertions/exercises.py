@@ -1,7 +1,8 @@
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
     ExerciseSchema, GetExerciseResponseSchema
 from tools.assertions.base import assert_equal
-from typing import Any
+
+
 
 def assert_create_exercise_response(request: CreateExerciseRequestSchema, response: CreateExerciseResponseSchema):
     """
@@ -46,3 +47,4 @@ def assert_get_exercise_response(get_response: GetExerciseResponseSchema, create
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
     assert_exercise(get_response.exercise, create_response.exercise)
+

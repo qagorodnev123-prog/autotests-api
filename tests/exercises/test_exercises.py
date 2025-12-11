@@ -1,7 +1,7 @@
 from http import HTTPStatus
 
-import pytest
 
+import pytest
 
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
     GetExerciseResponseSchema
@@ -31,6 +31,10 @@ class TestExercises:
         assert_get_exercise_response(response_data, function_exercise.response)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+
+
 
 
 
