@@ -23,11 +23,14 @@ from tools.assertions.schema import validate_json_schema
 @allure.tag(AllureTag.REGRESSION, AllureTag.EXERCISES)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeatures.EXERCISES)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeatures.EXERCISES)
 class TestExercises:
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Create exercise")
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_exercise(self, exercises_client, function_course):
         request = CreateExerciseRequestSchema(course_id=function_course.response.course.id)
         response = exercises_client.create_exercise_api(request)
@@ -43,6 +46,7 @@ class TestExercises:
     @allure.title("Get exercise")
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     def test_get_exercise(self, exercises_client, function_exercise):
         response = exercises_client.get_exercise_api(function_exercise.response.exercise.id)
         response_data = GetExerciseResponseSchema.model_validate_json(response.text)
@@ -57,6 +61,7 @@ class TestExercises:
     @allure.title("Update exercise")
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     def test_update_exercise (self, exercises_client, function_exercise):
         request = UpdateExerciseRequestSchema()
         response = exercises_client.update_exercise_api(function_exercise.response.exercise.id, request)
@@ -71,6 +76,7 @@ class TestExercises:
     @allure.title("Delete exercise")
     @allure.tag(AllureTag.DELETE_ENTITY)
     @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
     def test_delete_exercise(self, exercises_client, function_exercise):
         response_delete = exercises_client.delete_exercise_api(function_exercise.response.exercise.id)
         assert_status_code(response_delete.status_code, HTTPStatus.OK)
