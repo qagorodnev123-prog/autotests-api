@@ -94,7 +94,7 @@ class TestFiles:
     @allure.severity(Severity.NORMAL)
     @allure.sub_suite(AllureStory.DELETE_ENTITY)
     def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
-        delete_response = files_client.delete_file(function_file.response.file.id)
+        delete_response = files_client.delete_file_api(function_file.response.file.id)
         assert_status_code(delete_response.status_code, HTTPStatus.OK)
 
         get_response = files_client.get_file_api(function_file.response.file.id)

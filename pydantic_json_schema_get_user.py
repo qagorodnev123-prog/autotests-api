@@ -22,7 +22,7 @@ private_users_client_request = AuthenticationUserSchema(
     password=create_user_request.password
 )
 private_user_client = get_private_user_client(private_users_client_request)
-get_users_response = private_user_client.get_users_api(create_user_response.user.id)
+get_users_response = private_user_client.get_user_api(create_user_response.user.id)
 get_users_response_data = get_users_response.json()
 
 get_user_response_schema = GetUserResponseSchema.model_json_schema()
