@@ -2,7 +2,6 @@ from clients.users.public_users_client import PublicUsersClient
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 from http import HTTPStatus
 import pytest
-
 from fixtures.users import function_user
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeatures

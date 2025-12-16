@@ -1,10 +1,7 @@
 from http import HTTPStatus
-
-
 import pytest
 import allure
 from allure_commons.types import Severity
-
 from clients.errors_schema import InternalErrorResponseSchema
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeatures

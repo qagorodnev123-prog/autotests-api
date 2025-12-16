@@ -2,7 +2,6 @@ from http import HTTPStatus
 import pytest
 import allure
 from allure_commons.types import Severity
-
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeatures
 from tools.allure.stories import AllureStory
