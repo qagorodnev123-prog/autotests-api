@@ -3,15 +3,19 @@ import pytest
 import allure
 from allure_commons.types import Severity
 from clients.errors_schema import InternalErrorResponseSchema
+from clients.exercises.exercises_client import ExercisesClient
+from fixtures.courses import CourseFixture
+from fixtures.exercises import ExerciseFixture
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeatures
 from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
-    GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
+    GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema, GetExercisesQuerySchema, \
+    GetExercisesResponseSchema
 from tools.assertions.base import assert_status_code
 from tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_response, \
-    assert_update_exercise_response, assert_exercise_not_found_response
+    assert_update_exercise_response, assert_exercise_not_found_response, assert_get_exercises_response
 from tools.assertions.schema import validate_json_schema
 
 
@@ -85,6 +89,31 @@ class TestExercises:
         assert_exercise_not_found_response(response_get_data)
 
         validate_json_schema(response_get.json(), response_get_data.model_json_schema())
+
+    @allure.story(AllureStory.GET_ENTITIES)
+    @allure.title("Get exercises")
+    @allure.tag(AllureTag.GET_ENTITIES)
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.GET_ENTITIES)
+    def test_get_exercises(self, function_course, exercises_client):
+
+        create_exercise_request = CreateExerciseRequestSchema(course_id=function_course.response.course.id)
+        create_exercise_response = exercises_client.create_exercise_api(create_exercise_request)
+        create_exercise_response_data = CreateExerciseResponseSchema.model_validate_json(create_exercise_response.text)
+
+        query = GetExercisesQuerySchema(course_id=function_course.response.course.id)
+        response = exercises_client.get_exercises_api(query)
+        response_data = GetExercisesResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_get_exercises_response(response_data, [create_exercise_response_data])
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+
+        # Не смог совместить использование function_course и function_exercise. Каждый раз в итоге получалось, что
+        # get_exercises_api отдавал пустой массив в exercises.
+
 
 
 
