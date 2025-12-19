@@ -110,10 +110,7 @@ class TestExercises:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
-
-        # Не смог совместить использование function_course и function_exercise. Каждый раз в итоге получалось, что
-        # get_exercises_api отдавал пустой массив в exercises.
-
+        
 
 
 
