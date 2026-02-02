@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/f2a93065-7890-4a8b-9d61-57af426d293f' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjI0OjQ5LjE3OTY0NSIsInVzZXJfaWQiOiIxOTA2ODhkMS1lZDM0LTQ1MDQtYTFhZS01N2Q3MTMzNjg0NjIifQ.MrRhyknPmG_3lvhJEpcqBXWg8AUvjJmp4xZnrir39Ho' \
+  -H 'content-length: 318' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Agent begin outside couple.","maxScore":86,"minScore":5,"orderIndex":52,"description":"I experience attack federal. Lay spring can common. Radio should somebody too enter.\nFloor same speak best information education get population. Affect factor price education seem morning lay.","estimatedTime":"1 weeks"}'

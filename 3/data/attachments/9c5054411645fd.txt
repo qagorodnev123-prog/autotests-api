@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjI0OjQ3LjM1NDE2NSIsInVzZXJfaWQiOiI1ZGE2YzM1OS02ZDY1LTRlZmItOTZjZS1iZThjYTU4MDJmODIifQ.KKCuDIZNGZ1I9NCIRcuhi745tpqKnBrqv81sIGV1iqk' \
+  -H 'content-length: 353' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Successful project discussion particularly loss next.","maxScore":99,"minScore":28,"description":"Material might change expert blue tough. Fine human born show performance service. Hold miss listen wait.","estimatedTime":"6 weeks","previewFileId":"c31ed783-80fd-49da-80cb-e335ab164409","createdByUserId":"5da6c359-6d65-4efb-96ce-be8ca5802f82"}'

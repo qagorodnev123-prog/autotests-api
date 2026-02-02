@@ -1,0 +1,25 @@
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises?courseId=ad3735d8-1672-4774-a5f1-fb753a0eb9f4
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=ad3735d8-1672-4774-a5f1-fb753a0eb9f4
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:105 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:43 Check exercise
+INFO     BASE_ASSERTIONS:base.py:36 Check that "id" equals to eab9f070-b6ef-4770-815d-5d43246a8d55
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Real remember might lawyer real peace.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "course_id" equals to ad3735d8-1672-4774-a5f1-fb753a0eb9f4
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 53
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 29
+INFO     BASE_ASSERTIONS:base.py:36 Check that "order_index" equals to 74
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Tax leg model threat build. Generation use significant. Rise avoid manage today response position.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

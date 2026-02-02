@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjI0OjUxLjAxNDkwNCIsInVzZXJfaWQiOiIxNTU4ZGI4Ni02YmEwLTRhZWMtYWY4Ny00ZmFlZGRhOTY0OWYifQ.4VV_8hAexxBi8z1YOKzloP00hfSe7yge95zT_xUDL34' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Moment purpose at across general run.","maxScore":85,"minScore":12,"description":"However lose check focus study. Personal level cover remember tell move. Factor skill force notice husband poor today.","estimatedTime":"5 weeks","previewFileId":"7c44f9de-ea80-4c44-83e1-6c57f90b0e70","createdByUserId":"1558db86-6ba0-4aec-af87-4faedda9649f"}'

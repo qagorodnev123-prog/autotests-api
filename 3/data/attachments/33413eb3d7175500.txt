@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjI0OjQ3LjkzNDc2OCIsInVzZXJfaWQiOiI0Y2E1MWE2Yy04NjNlLTQ5ZTQtOTNhYi0zMWMwMjU1NjVlNDMifQ.Q0DnWAJct_cLoDpcckryN5szZYugjKaEltKzrHVgImo' \
+  -H 'content-length: 435' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Loss story top pattern shoulder energy.","maxScore":98,"minScore":29,"description":"Star nature choose room floor carry. Forward owner contain tree catch. Doctor three talk.\nPrepare picture guy anyone between.\nSomeone son the herself. Business worry party call too space interesting.","estimatedTime":"8 weeks","previewFileId":"a1a7a24a-eaa5-4788-b561-639d24aefccb","createdByUserId":"4ca51a6c-863e-49e4-93ab-31c025565e43"}'

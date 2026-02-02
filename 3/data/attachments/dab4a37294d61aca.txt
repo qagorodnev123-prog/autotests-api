@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjI0OjQ2LjQ0NTA0OCIsInVzZXJfaWQiOiIzZTE4ZmMyNS03YWM3LTQyODAtODllMy1jMGQ0YzMyNTI5YzMifQ.YpCQPQoi6uqMoO8WIT9FL8YwTbEmw34pJZzSRVeuJAM' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fly dark thank sure last.","maxScore":61,"minScore":20,"description":"Somebody physical simple class very letter conference. Modern trip sit receive leader sea reach.\nOwn beyond exist brother. Computer these television call employee house.","estimatedTime":"4 weeks","previewFileId":"6a08d2ef-d46a-4b3f-aec6-4f89af3153a5","createdByUserId":"3e18fc25-7ac7-4280-89e3-c0d4c32529c3"}'

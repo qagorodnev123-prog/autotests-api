@@ -1,0 +1,20 @@
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:62 Check create courses response
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Loss story top pattern shoulder energy.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 98
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 29
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Star nature choose room floor carry. Forward owner contain tree catch. Doctor three talk.
+Prepare picture guy anyone between.
+Someone son the herself. Business worry party call too space interesting.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 8 weeks
+INFO     BASE_ASSERTIONS:base.py:36 Check that "preview_file_id" equals to a1a7a24a-eaa5-4788-b561-639d24aefccb
+INFO     BASE_ASSERTIONS:base.py:36 Check that "created_by_user_id" equals to 4ca51a6c-863e-49e4-93ab-31c025565e43
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

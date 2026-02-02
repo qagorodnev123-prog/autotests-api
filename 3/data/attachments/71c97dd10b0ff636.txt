@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/3dcafaf3-808e-4d75-8807-251a937f1695' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjI0OjQ3LjM1NDE2NSIsInVzZXJfaWQiOiI1ZGE2YzM1OS02ZDY1LTRlZmItOTZjZS1iZThjYTU4MDJmODIifQ.KKCuDIZNGZ1I9NCIRcuhi745tpqKnBrqv81sIGV1iqk' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Dark big herself box not evidence.","maxScore":88,"minScore":28,"description":"Look news long. Serve purpose about strong score raise. Middle analysis huge money wife thank. Institution without politics consumer benefit.","estimatedTime":"1 weeks"}'
