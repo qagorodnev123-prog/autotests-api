@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU4LjU5MDA0MSIsInVzZXJfaWQiOiIzOGRkMWVlOS04NTRmLTQzOGYtOGE3Zi01YWY0YjQ3YWE5ODkifQ.Abf0cvAXjzRZ2ZPKZCVgxfJW2nCOMkulNsdUC9uc3Do' \
+  -H 'content-length: 426' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Understand kind report defense probably ready both should.","maxScore":96,"minScore":3,"description":"Believe fall central run picture appear hundred. Begin life effort provide for. Every how now.\nMother site check speech television from claim. Nothing picture continue save.","estimatedTime":"2 weeks","previewFileId":"415d1cd5-6e13-4a8c-8142-875c9d27e356","createdByUserId":"38dd1ee9-854f-438f-8a7f-5af4b47aa989"}'

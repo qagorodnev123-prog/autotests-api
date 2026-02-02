@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUxOjAxLjAzNjg4MyIsInVzZXJfaWQiOiIwNjliNTRmMi1iMTljLTRkNzMtOGU2MC04Yzk5MDRmMDkyZjYifQ.ps0no4MHhvKaq3faf6L_dLdtvUv40qaRwxcX-N9Hoew' \
+  -H 'content-length: 322' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Include never over situation hope affect.","courseId":"1766c307-0a2d-4b9b-b4b9-4f16f5dae73f","maxScore":64,"minScore":2,"orderIndex":94,"description":"Total community reach. Political song successful agent drive positive very. College low write threat. Glass add light next agreement.","estimatedTime":"8 weeks"}'

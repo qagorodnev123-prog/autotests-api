@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUxOjAxLjMxNjQ5OCIsInVzZXJfaWQiOiIzN2VmMGY3Zi01MGFiLTQ3YjYtYWIxYy00Yzc4YjI5NGU0NmIifQ.71FUUDJ68xh9bcxMgBfBn1WQXW_DVh8zvAOI0uZkP8E' \
+  -H 'content-length: 429' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Few picture but might decade particular.","maxScore":71,"minScore":14,"description":"Stock agreement require realize. Sport news kid try.\nDeal drug several our bit expert. Simply act agent rise magazine.\nWorry majority hard music state similar. Girl as give recently official.","estimatedTime":"10 weeks","previewFileId":"67447b3a-6203-4a43-bd4f-3f28e0b5956b","createdByUserId":"37ef0f7f-50ab-47b6-ab1c-4c78b294e46b"}'

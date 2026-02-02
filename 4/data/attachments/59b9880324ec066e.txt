@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU4Ljg2NDgwNCIsInVzZXJfaWQiOiJkNDY5NmIxZi00OTVjLTRmOWEtODc2Yi1mMjFmZWQ5NzU4YjMifQ.CCZiU0gzePDusyVFDspRko7HOroBPzp-TouUhcfvQUk' \
+  -H 'content-length: 279' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Whose approach everyone many help cup college.","courseId":"fb5cf0ec-1ed5-4bb8-a456-c90c1b2db11d","maxScore":89,"minScore":20,"orderIndex":69,"description":"Along special yeah hot Mrs foreign white. Officer agree reach that. Where base feel.","estimatedTime":"4 weeks"}'

@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:62 Check create courses response
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Understand kind report defense probably ready both should.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 96
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 3
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Believe fall central run picture appear hundred. Begin life effort provide for. Every how now.
+Mother site check speech television from claim. Nothing picture continue save.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 2 weeks
+INFO     BASE_ASSERTIONS:base.py:36 Check that "preview_file_id" equals to 415d1cd5-6e13-4a8c-8142-875c9d27e356
+INFO     BASE_ASSERTIONS:base.py:36 Check that "created_by_user_id" equals to 38dd1ee9-854f-438f-8a7f-5af4b47aa989
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

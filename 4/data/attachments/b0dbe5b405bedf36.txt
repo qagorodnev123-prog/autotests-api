@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/95c1f501-7f31-4aff-ba7b-f17af67264ba' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU3LjYyMzE1NyIsInVzZXJfaWQiOiJhNjk0NDIxMy1jOGFjLTRjMGUtYWYyNC1iNTVhNTU2N2EwMmIifQ.rxBKKztmycYQPxEdLLfXNJZ6QBLNZsnE6yjz_qNCUdY' \
+  -H 'content-length: 218' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Window TV use.","maxScore":66,"minScore":5,"description":"Future safe most difficult such rock organization no. Likely rest road establish. Throughout can their player too despite.","estimatedTime":"8 weeks"}'

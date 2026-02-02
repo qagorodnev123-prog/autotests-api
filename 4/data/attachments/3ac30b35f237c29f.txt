@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU5Ljg2MzcwOSIsInVzZXJfaWQiOiIzYmFlMzFkNi1iNTdmLTQyZjItODBkNy1lNjJiMjYyMTg4YmIifQ.P91ilHoZ89Ksmf3huxUwOjVtkhrVe6kNIKg2TtZWBKY' \
+  -H 'content-length: 294' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Next real industry let.","courseId":"46d49f44-93b9-4740-abbc-01ac72ee2b6d","maxScore":81,"minScore":22,"orderIndex":70,"description":"Others medical sister interview pay. Stop indicate social similar ask high budget effect. Condition get throw player away.","estimatedTime":"2 weeks"}'

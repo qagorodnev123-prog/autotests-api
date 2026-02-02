@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU4Ljg2NDgwNCIsInVzZXJfaWQiOiJkNDY5NmIxZi00OTVjLTRmOWEtODc2Yi1mMjFmZWQ5NzU4YjMifQ.CCZiU0gzePDusyVFDspRko7HOroBPzp-TouUhcfvQUk' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Tree really certain everyone suffer.","maxScore":87,"minScore":30,"description":"Fall type least let. Company clearly color policy sign stop.\nPresent theory deal before type go. Throughout from around subject deep situation. Buy than during each hour.","estimatedTime":"6 weeks","previewFileId":"97d9988a-1797-40a4-856c-271a94da4d9a","createdByUserId":"d4696b1f-495c-4f9a-876b-f21fed9758b3"}'
